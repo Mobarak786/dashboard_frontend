@@ -1,5 +1,8 @@
 # React-Dashboard-Frontend
 
+#project deployed link
+https://dashboard-frontend-mobarak.netlify.app/
+
 #How to run the project locally
 
 [1] git clone https://github.com/Mobarak786/dashboard_frontend.git
