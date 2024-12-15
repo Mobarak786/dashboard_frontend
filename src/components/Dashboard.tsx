@@ -14,7 +14,7 @@ const Dashboard: React.FC<Dashboardprops> = ({ children }) => {
         className={
           hidden
             ? "hidden"
-            : "pt-[50px] w-[200px] h-screen absolute left-0 top-0 bg-gray-200 z-10"
+            : "pt-[50px] w-[200px] h-screen absolute border-r-2 left-0 top-0 bg-gray-100 z-10"
         }
       >
         <div className="w-full h-10 pl-5 flex items-center hover:bg-slate-50 text-md font-semibold">
@@ -31,7 +31,7 @@ const Dashboard: React.FC<Dashboardprops> = ({ children }) => {
 
       {/*siderbar popup button  for small devices*/}
       <BsLayoutTextSidebar
-        className="absolute right-2 top-2 w-7 h-7 sm:hidden"
+        className="absolute right-2 top-2 w-7 h-7 text-gray-500 sm:hidden"
         onClick={() => setHidden(!hidden)}
       />
 

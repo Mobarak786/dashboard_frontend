@@ -13,13 +13,16 @@ import LoginPage from "./components/LoginPage";
 import { useState } from "react";
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   return (
     <Provider store={store}>
       <Router>
         <Routes>
           {/* login route */}
-          <Route path="/login" element={<LoginPage />} />
+          <Route
+            path="/login"
+            element={<LoginPage setIsAuthenticated={setIsAuthenticated} />}
+          />
 
           {/* protected route */}
           {isAuthenticated ? (

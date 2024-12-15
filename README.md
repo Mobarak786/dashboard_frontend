@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# React-Dashboard-Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#How to run the project locally
 
-Currently, two official plugins are available:
+[1] git clone https://github.com/Mobarak786/dashboard_frontend.git
+(create an empty folder and clone the project from above github url)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[2] cd dashboard_frontend
+(change the directcory to work on this project)
 
-## Expanding the ESLint configuration
+[3]npm install
+(write this command in your terminal and press enter. That will install all necessary dependencies)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[4] npm run dev
+(run this command on your terminal to run your application locally.It will provide a url "http://localhost:5173/" . copy this url and past it on browser or click it.You will be abale to see the website. )
 
-- Configure the top-level `parserOptions` property like this:
+#login credentials
+username : admin
+password : password
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+#Features added in the projrct
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+[1] login page
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+[2] user dashboard
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. userTable
+2. searching and filtering feature added
+3. pagination feature added
+4. delete user action added in the table
+
+[3]Analytics dashboard
+
+1. users counting features (total users, active users ,deleted users ) added
+2. 3 chart added pie chart, bar chart, line chart for vissualization of users based on
+   different parameters.
+
+[4] side navbar added for big and small screens
+[5] mobile responsive design added
+
+[6] some features may be added in future .

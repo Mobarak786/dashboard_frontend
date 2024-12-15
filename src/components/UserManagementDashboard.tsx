@@ -55,7 +55,6 @@ const UserManagementDashboard: React.FC = () => {
             placeholder="Search by name or email"
             value={searchTerms}
             onChange={handleSearch}
-            className="bg-transparent focus:outline-none"
           />
         </div>
 
@@ -87,9 +86,11 @@ const UserManagementDashboard: React.FC = () => {
               ))}
             </tbody>
           ) : (
-            <tr className="text-xl  text-red-500">
-              <td colSpan={4}>No data found!!!</td>
-            </tr>
+            <tfoot>
+              <tr className="text-xl  text-red-500">
+                <td colSpan={4}>No data found!!!</td>
+              </tr>
+            </tfoot>
           )}
         </table>
 
