@@ -19,7 +19,6 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import { TbBackground } from "react-icons/tb";
 
 const COLORS = ["#FF6384", "#36A2EB"];
 
@@ -99,7 +98,7 @@ const AnalyticsDashboard: React.FC = () => {
                 label
               >
                 {Object.values(chartData.activeInactive).map(
-                  (item: any, index: number) => (
+                  (_, index: number) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}

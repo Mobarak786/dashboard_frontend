@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const LoginPage: React.FC = ({ setIsAuthenticated }) => {
+interface Props {
+  setIsAuthenticated: (bool: any) => void;
+}
+
+const LoginPage = ({ setIsAuthenticated }: Props) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
